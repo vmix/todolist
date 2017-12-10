@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Todos</h1>
+    <h1>Задачи</h1>
         @foreach($todos as $todo)
             <div class="well">
                 <h3><a href="/todo/{{ $todo->id }}">{{ $todo->text }}</a></h3>
